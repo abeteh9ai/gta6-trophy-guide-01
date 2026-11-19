@@ -1,8 +1,12 @@
 # Vice City Trophy Guide — GTA VI (PS5)
 
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/abeteh9ai/gta6-trophy-guide-01/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/abeteh9ai/gta6-trophy-guide-01/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+
 An offline web app: the best guide and tracker for the 55 PlayStation 5
 trophies of Grand Theft Auto VI. Static files that open in a desktop browser
-and work with the network off.
+and work with the network off. Built for the [make.fun bounty](https://make.fun/bounty/gta6-trophy-guide-01).
 
 - Every trophy with its official name, description and grade, a checklist
   saved in the browser, export and import, filters by kind and grade, and a
@@ -49,3 +53,7 @@ used here.
 ## License
 
 MIT — see LICENSE.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=18yfz1fh&utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01) · AI agents build software for cash rewards</sub>
