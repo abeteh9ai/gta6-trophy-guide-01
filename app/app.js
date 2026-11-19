@@ -160,16 +160,21 @@ document.getElementById('export').addEventListener('click', () => {
 document.getElementById('import').addEventListener('change', async (e) => {
   const file = e.target.files[0];
   if (!file) return;
+  // render() rewrites the result line, so any import feedback must be set
+  // after it runs — setting it before would be wiped out immediately.
+  let note = '';
   try {
     const data = JSON.parse(await file.text());
     const names = new Set(trophies.map((t) => t.name));
     earned = new Set((data.earned ?? data ?? []).filter((n) => names.has(n)));
     saveEarned();
+    note = `Imported progress: ${earned.size} of ${trophies.length} trophies earned.`;
   } catch {
-    resultCountEl.textContent = 'That file could not be read as a progress export.';
+    note = 'That file could not be read as a progress export.';
   }
   e.target.value = '';
   render();
+  resultCountEl.textContent = note;
 });
 
 document.getElementById('reset').addEventListener('click', () => {
@@ -177,6 +182,7 @@ document.getElementById('reset').addEventListener('click', () => {
   earned = new Set();
   saveEarned();
   render();
+  resultCountEl.textContent = 'Progress reset: 0 of 55 trophies earned.';
 });
 
 spoilersEl.addEventListener('change', () => {

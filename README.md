@@ -10,7 +10,7 @@ and work with the network off.
 - A roadmap to the platinum (about 200 hours, 4/10) and the missable
   trophies flagged, built from the official descriptions.
 - A guide to each trophy in our own words that cites its sources: what to
-  do, where and how, and when it can be missed. Four trophies still have
+  do, where and how, and when it can be missed. Five trophies still have
   no confirmed unlock method after launch day; their guides say so
   plainly. The Truth Is Out There was confirmed on launch day by a
   player video (UFO abduction event in Kelly County after 2am).
@@ -29,8 +29,10 @@ Or open `app/index.html` directly from the files. No build step, no network.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-`main.ts` copies `app/` and `screenshots/` to the output directory and
-writes `dossier.json` with the kit's `vendor/makefun-frontend.ts`.
+`main.ts` first checks that `app/data/trophies.json` loads and holds all
+55 trophies (failing loudly if it does not), then copies `app/` and
+`screenshots/` to the output directory and writes `dossier.json` with the
+kit's `vendor/makefun-frontend.ts`.
 
 ## Sources
 

@@ -94,6 +94,11 @@ button, .import-btn {
 }
 .import-btn input { display: none; }
 button:hover, .import-btn:hover { background: #155050; }
+button:focus-visible, .import-btn:focus-visible,
+input:focus-visible, select:focus-visible {
+  outline: 2px solid #c2542b;
+  outline-offset: 2px;
+}
 .result-count { margin: 10px 0 0; color: #6b6156; }
 
 .trophy-list { margin-top: 18px; display: flex; flex-direction: column; gap: 12px; }
