@@ -1,0 +1,152 @@
+/* Vice City Trophy Guide — own look: deep teal + warm paper + rust accents. No external assets. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #f6f1e7;
+  color: #23201c;
+  line-height: 1.45;
+}
+.masthead {
+  background: #0e3a3a;
+  color: #f6f1e7;
+  padding: 28px 20px 22px;
+  border-bottom: 5px solid #c2542b;
+}
+.masthead-inner { max-width: 1080px; margin: 0 auto; }
+.kicker {
+  margin: 0 0 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e8b64c;
+}
+.masthead h1 {
+  margin: 0 0 6px;
+  font-size: 42px;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+}
+.subtitle { margin: 0 0 16px; font-size: 16px; color: #d9e6e2; max-width: 760px; }
+.progress-bar {
+  height: 14px;
+  background: #0a2b2b;
+  border: 1px solid #4a7a76;
+  border-radius: 7px;
+  overflow: hidden;
+  max-width: 760px;
+}
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: #e8b64c;
+  transition: width 0.2s ease;
+}
+.progress-text { margin: 6px 0 4px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; }
+.grade-counts { margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #bcd4cf; }
+
+main { max-width: 1080px; margin: 0 auto; padding: 0 20px 40px; }
+.panel {
+  background: #fffdf7;
+  border: 1px solid #ddd2bd;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-top: 18px;
+}
+.panel h2 { margin: 0 0 8px; font-size: 24px; color: #0e3a3a; }
+.roadmap-intro { margin: 0 0 10px; }
+.stages { margin: 0 0 14px; padding-left: 22px; }
+.stages li { margin-bottom: 8px; }
+.missable-box {
+  background: #fdf0e8;
+  border: 1px solid #c2542b;
+  border-left: 6px solid #c2542b;
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+.missable-box h3 { margin: 0 0 6px; font-size: 17px; color: #8f2f14; font-family: Arial, Helvetica, sans-serif; }
+.missable-box p { margin: 0 0 6px; }
+.missable-box p:last-child { margin-bottom: 0; }
+
+.controls { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+.control-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 10px; }
+.control-row:last-of-type { margin-bottom: 0; }
+.controls label { display: flex; gap: 6px; align-items: center; }
+.controls input[type="search"], .controls select {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid #b9ab8d;
+  border-radius: 5px;
+  background: #fff;
+  color: #23201c;
+}
+.search-label input { width: 260px; }
+.spacer { flex: 1; }
+button, .import-btn {
+  font: inherit;
+  padding: 7px 12px;
+  border: 1px solid #0e3a3a;
+  border-radius: 5px;
+  background: #0e3a3a;
+  color: #f6f1e7;
+  cursor: pointer;
+}
+.import-btn input { display: none; }
+button:hover, .import-btn:hover { background: #155050; }
+.result-count { margin: 10px 0 0; color: #6b6156; }
+
+.trophy-list { margin-top: 18px; display: flex; flex-direction: column; gap: 12px; }
+.trophy-card {
+  display: flex;
+  gap: 14px;
+  background: #fffdf7;
+  border: 1px solid #ddd2bd;
+  border-left: 6px solid #8a6d3b;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.trophy-card.grade-platinum { border-left-color: #4a90b8; background: #f2f8fc; }
+.trophy-card.grade-gold { border-left-color: #d9a521; }
+.trophy-card.grade-silver { border-left-color: #8d99a5; }
+.trophy-card.grade-bronze { border-left-color: #a06a3b; }
+.trophy-card.earned { background: #eef6ee; }
+.trophy-card.earned .trophy-name { text-decoration: line-through; text-decoration-thickness: 2px; }
+.earn-box { width: 22px; height: 22px; margin-top: 3px; flex: none; accent-color: #0e3a3a; cursor: pointer; }
+.trophy-body { flex: 1; min-width: 0; }
+.trophy-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.trophy-name { margin: 0; font-size: 19px; color: #0e3a3a; }
+.grade-badge {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 10px;
+  color: #fff;
+}
+.grade-platinum .grade-badge { background: #4a90b8; }
+.grade-gold .grade-badge { background: #b8860b; }
+.grade-silver .grade-badge { background: #6b7683; }
+.grade-bronze .grade-badge { background: #8a5a2b; }
+.flag {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+.flag-hidden { background: #e8e2d4; color: #5c5344; }
+.flag-missable { background: #c2542b; color: #fff; }
+.official-desc { margin: 6px 0; font-style: italic; color: #5c5344; }
+.guide { margin: 6px 0; }
+.trophy-meta { margin: 6px 0 2px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #6b6156; }
+.trophy-sources { margin: 2px 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #8a7f6d; }
+.spoiler-cover { margin: 6px 0; color: #6b6156; font-style: italic; }
+
+.sources h2 { font-size: 20px; }
+.sources li { margin-bottom: 4px; }
+.disclaimer { font-size: 13px; color: #6b6156; }

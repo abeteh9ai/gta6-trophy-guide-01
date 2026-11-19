@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice City Trophy Guide — GTA VI (PS5) Trophy Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e3a3a'/%3E%3Ctext x='16' y='23' font-size='18' text-anchor='middle' fill='%23e8b64c' font-family='Georgia' font-weight='bold'%3EV%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Unofficial fan guide</p>
+    <h1>Vice City Trophy Guide</h1>
+    <p class="subtitle">All 55 official trophies, a guide for each one, and a tracker that saves your progress in this browser. Works offline.</p>
+    <div class="progress-wrap" id="progress-wrap">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <p class="progress-text" id="progress-text">0 of 55 earned</p>
+    </div>
+    <p class="grade-counts" id="grade-counts"></p>
+  </div>
+</header>
+
+<main>
+  <section class="panel roadmap" id="roadmap">
+    <h2>Roadmap to the Platinum</h2>
+    <p class="roadmap-intro">About <strong>200 hours</strong>, difficulty <strong>4/10</strong>. One playthrough is enough &mdash; no online trophies, no difficulty trophies, no mission medals. The platinum is <strong>Vice Got a Price!</strong></p>
+    <ol class="stages">
+      <li><strong>Stage 1 &mdash; Play the story (60&ndash;80 hours).</strong> Finish all five chapters and do optional missions as they appear. Scan vehicles with the WAiNK app as you drive. Keep a manual save at the start of every chapter and one untouched save from just before the final mission &mdash; there is no mission replay.</li>
+      <li><strong>Stage 2 &mdash; Side stories &amp; robberies.</strong> Finish the six side-story finales (Andy, Billy, Kenton, Randy, Tyrone, Bret), 8 Strangers &amp; Freaks strands, bank vaults (late Chapter 4) and jewelry stores (Chapter 3).</li>
+      <li><strong>Stage 3 &mdash; Activities &amp; collectibles.</strong> 250 stunts (300 for 100%), 42 Shooting Range gold medals, 14 Top Fun drone races, card sets, WAiNK tags, 100 vehicles discovered (200 for 100%), 50 Challenges (70 for 100%).</li>
+      <li><strong>Stage 4 &mdash; 100% cleanup (about 100 hours).</strong> Finish the 100% checklist under Progress &gt; Stats &gt; 100% Completion. <strong>A Long Road</strong> pops, then the platinum.</li>
+    </ol>
+    <div class="missable-box" id="missable-box">
+      <h3>&#9888; The one trophy you can miss</h3>
+      <p><strong>Positive Mental Attitude</strong> (meditate at every spot across Leonida). Lucia&rsquo;s balcony meditation in Chapter 1 disappears after that chapter &mdash; accept it when she walks out to the balcony after the mission Down to Earth, and keep a Chapter 1 save until the trophy pops. Everything else stays available after the credits.</p>
+      <p>Also time-sensitive: <strong>Race Against Yago</strong> in Chapter 3 (hourglass icon) counts toward Strangers &amp; Freaks &mdash; do it the moment it appears. And never use cheats on your trophy save: cheats switch off trophies and saving.</p>
+    </div>
+  </section>
+
+  <section class="panel controls" id="controls">
+    <div class="control-row">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Trophy name or guide text&hellip;"></label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="side">Side stories</option>
+          <option value="robbery">Robberies</option>
+          <option value="activity">Activities</option>
+          <option value="collectible">Collectibles</option>
+          <option value="money">Money &amp; property</option>
+          <option value="combat">Combat &amp; driving</option>
+          <option value="exploration">Exploration</option>
+          <option value="misc">Odd jobs</option>
+          <option value="platinum">Platinum &amp; 100%</option>
+        </select>
+      </label>
+      <label>Status
+        <select id="status">
+          <option value="all">All</option>
+          <option value="earned">Earned</option>
+          <option value="unearned">Not earned yet</option>
+        </select>
+      </label>
+    </div>
+    <div class="control-row">
+      <label class="spoiler-toggle"><input id="spoilers" type="checkbox" checked> Hide story trophies until earned (spoiler-safe)</label>
+      <span class="spacer"></span>
+      <button id="export" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="import" type="file" accept="application/json"></label>
+      <button id="reset" type="button">Reset progress</button>
+    </div>
+    <p class="result-count" id="result-count"></p>
+  </section>
+
+  <section class="trophy-list" id="trophy-list" aria-live="polite"></section>
+
+  <section class="panel sources" id="sources">
+    <h2>Sources &amp; notes</h2>
+    <p>Trophy names, descriptions and grades are the official list as published at launch. PlayStation had not published its own list when this guide was written (19 November 2026), so every name, description and grade was cross-checked across independent full lists that agree on all 55 &mdash; Output Lag, GTAVibes, GamesRadar+ and PC Gamer (via gtasix.how), and PowerPyx / GTABase (via gta-zone.com). Five trophies had no confirmed unlock method at launch; their guides say so plainly.</p>
+    <ul>
+      <li>Output Lag &mdash; outputlag.com/guides/gta-6-trophy-list/ (checked 19 Nov 2026)</li>
+      <li>GTAVibes &mdash; gtavibes.com/guides/gta-6-trophy-list-achievements</li>
+      <li>GamesRadar+ / PC Gamer lists &mdash; gtasix.how/trophies/</li>
+      <li>PowerPyx / GTABase &mdash; gta-zone.com/news/gta-6-trophies-achievements/</li>
+      <li>KeenGamer roadmap &mdash; keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/</li>
+    </ul>
+    <p class="disclaimer">Unofficial fan guide. Grand Theft Auto VI is developed and published by Rockstar Games. No Rockstar logo, artwork, box art or game screenshot is used here; the look is our own. Guides are written in our own words; sources are cited beside each trophy, never copied.</p>
+  </section>
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
