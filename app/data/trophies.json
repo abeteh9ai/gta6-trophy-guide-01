@@ -665,7 +665,7 @@
    "kind": "misc",
    "missable": false,
    "guide": "Enjoy a cocktail with a view on Ocean Beach. No confirmed method at launch - the description is the only hint, and it may pop while you play normally. Try a beachfront bar on Ocean Beach with a view of the water.",
-   "when": "Unconfirmed at launch.",
+   "when": "Still unconfirmed - re-checked on launch day, 19 Nov 2026.",
    "sources": [
     "Output Lag"
    ]
@@ -679,7 +679,7 @@
    "kind": "misc",
    "missable": false,
    "guide": "Smash your way out of a vehicle showroom in classic style. No confirmed method at launch. The description points at a showroom escape - likely a smash-and-grab exit from a car dealership.",
-   "when": "Unconfirmed at launch.",
+   "when": "Still unconfirmed - re-checked on launch day, 19 Nov 2026.",
    "sources": [
     "Output Lag"
    ]
@@ -708,7 +708,7 @@
    "kind": "activity",
    "missable": false,
    "guide": "A partnership with mass appeal. It should pop when Jason and Lucia both reach maximum Strength. Buy a gym membership and train with your partner - the partner trains alongside you. Unconfirmed at launch; the description is the only hint.",
-   "when": "Unconfirmed at launch.",
+   "when": "Still unconfirmed - re-checked on launch day, 19 Nov 2026.",
    "sources": [
     "Output Lag",
     "GTAVibes"
@@ -738,7 +738,7 @@
    "kind": "misc",
    "missable": false,
    "guide": "Second time's the charm. No confirmed method at launch; the description hints at succeeding on a second attempt at something.",
-   "when": "Unconfirmed at launch.",
+   "when": "Still unconfirmed - re-checked on launch day, 19 Nov 2026.",
    "sources": [
     "Output Lag"
    ]
@@ -751,10 +751,12 @@
    "hidden": true,
    "kind": "misc",
    "missable": false,
-   "guide": "What the hell just happened? No confirmed method at launch - the description is the only hint, and it may pop while you play normally.",
-   "when": "Unconfirmed at launch.",
+   "guide": "A UFO abduction random event in Kelly County, just east of Port Gellhorn. Go there after 2:00am in-game and look for a car parked by the road with its lights flickering. Follow the trail from the car into the woods and a UFO abduction scene plays out: Jason wakes up in a field, gets a worried call from Lucia, and the trophy pops. Confirmed on launch day by a player video (HarryNinetyFour); so far a single video, so the exact trigger may need a few tries - if nothing happens, sleep at home to reach midnight and try again after 2am.",
+   "when": "Free roam, after 2am in-game. Launch-day player report.",
    "sources": [
-    "Output Lag"
+    "Output Lag",
+    "GTAVibes Easter Eggs",
+    "YouTube: HarryNinetyFour"
    ]
   },
   {
@@ -766,7 +768,7 @@
    "kind": "activity",
    "missable": false,
    "guide": "Bowl 'em over with a melee drive-by. No confirmed method at launch. The name and description point at bowling pins knocked down with a melee attack from a moving vehicle - try it at a bowling alley.",
-   "when": "Unconfirmed at launch.",
+   "when": "Still unconfirmed - re-checked on launch day, 19 Nov 2026.",
    "sources": [
     "Output Lag"
    ]

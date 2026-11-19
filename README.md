@@ -10,8 +10,10 @@ and work with the network off.
 - A roadmap to the platinum (about 200 hours, 4/10) and the missable
   trophies flagged, built from the official descriptions.
 - A guide to each trophy in our own words that cites its sources: what to
-  do, where and how, and when it can be missed. Five trophies had no
-  confirmed unlock method at launch; their guides say so plainly.
+  do, where and how, and when it can be missed. Four trophies still have
+  no confirmed unlock method after launch day; their guides say so
+  plainly. The Truth Is Out There was confirmed on launch day by a
+  player video (UFO abduction event in Kelly County after 2am).
 
 ## Run it
 
